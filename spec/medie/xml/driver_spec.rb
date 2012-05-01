@@ -21,7 +21,7 @@ describe Medie::Xml::Driver do
     end
 
   end
-  
+
   context "when unmarshalling" do
     
     it "should return an empty hash if its empty" do
@@ -52,8 +52,9 @@ describe Medie::Xml::Driver do
     end
     
     it "should return the unmarshalled Xml hash enhanced" do
-      lambda { Medie::Xml::Driver.new.marshal({"name" => "guilherme"}, nil) }.
-        should raise_error("Trying to marshal a string into xml does not make sense: 'nameguilherme'")
+      hash = {"name" => "guilherme"}
+      lambda { Medie::Xml::Driver.new.marshal(hash, nil) }.
+        should raise_error("Trying to marshal a string into xml does not make sense: '#{hash}'")
     end
     
     it "should return the unmarshalled Xml hash enhanced" do

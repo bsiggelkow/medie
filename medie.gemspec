@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.require_paths = ["lib"]
 
-  s.add_dependency('methodize')
+  s.add_dependency('methodize', '0.2.0')
   s.add_dependency('json_pure')
   s.add_dependency('activesupport')
   s.add_dependency('i18n')

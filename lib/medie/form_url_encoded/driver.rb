@@ -1,3 +1,6 @@
+require 'active_support/core_ext/object/to_query'
+require 'active_support/core_ext/object/to_param'
+
 module Medie
   module FormUrlEncoded
     class Driver
