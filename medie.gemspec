@@ -7,7 +7,7 @@ require "medie/version"
 
 Gem::Specification.new do |s|
   s.name        = 'medie'
-  s.version     = Medie::VERSION
+  s.version     = Medie::VERSION.to_s
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Guilherme Silveira"]
   s.email       = %q{guilherme.silveira@caelum.com.br}

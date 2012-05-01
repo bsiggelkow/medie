@@ -2,11 +2,11 @@ module Medie
   module FormUrlEncoded
     class Driver
       def marshal(content, rel)
-          if content.kind_of? Hash
-            content.map { |key, value| "#{key}=#{value}" }.join("&")
-          else
-            content
-          end
+        if content.kind_of? Hash
+          content.to_param
+        else
+          content
+        end
       end
   
       def unmarshal(content)
