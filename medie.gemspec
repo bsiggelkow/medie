@@ -3,7 +3,7 @@
 # Instead, edit Jeweler::Tasks in Rakefile, and run 'rake gemspec'
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "medie/version.rb"
+require "medie/version"
 
 Gem::Specification.new do |s|
   s.name        = 'medie'
