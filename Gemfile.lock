@@ -32,7 +32,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activesupport (~> 3.1.0)
+  activesupport (>= 3.1.0)
   builder (~> 3.0.0)
   i18n (~> 0.6.0)
   jeweler
