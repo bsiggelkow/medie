@@ -1,7 +1,12 @@
 source :rubygems
 
-gemspec
+gem 'methodize', '0.2.0'
+gem 'json_pure', '~>1.7.0'
+gem 'activesupport', '~>3.2.0'
+gem 'i18n', '~>0.6.0'
+gem 'builder', '~>3.0.0'
 
-gem 'rspec'
-gem 'rake'
-gem 'rdoc'
+group :development, :test do
+  gem 'jeweler'
+  gem 'rspec'
+end
