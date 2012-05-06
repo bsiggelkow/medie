@@ -55,7 +55,7 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<methodize>, ["= 0.2.0"])
       s.add_runtime_dependency(%q<json_pure>, ["~> 1.7.0"])
-      s.add_runtime_dependency(%q<activesupport>, ["~> 3.1.0"])
+      s.add_runtime_dependency(%q<activesupport>, [">= 3.1.0"])
       s.add_runtime_dependency(%q<i18n>, ["~> 0.6.0"])
       s.add_runtime_dependency(%q<builder>, ["~> 3.0.0"])
       s.add_development_dependency(%q<jeweler>, [">= 0"])
@@ -63,7 +63,7 @@ Gem::Specification.new do |s|
     else
       s.add_dependency(%q<methodize>, ["= 0.2.0"])
       s.add_dependency(%q<json_pure>, ["~> 1.7.0"])
-      s.add_dependency(%q<activesupport>, ["~> 3.1.0"])
+      s.add_dependency(%q<activesupport>, [">= 3.1.0"])
       s.add_dependency(%q<i18n>, ["~> 0.6.0"])
       s.add_dependency(%q<builder>, ["~> 3.0.0"])
       s.add_dependency(%q<jeweler>, [">= 0"])
@@ -72,7 +72,7 @@ Gem::Specification.new do |s|
   else
     s.add_dependency(%q<methodize>, ["= 0.2.0"])
     s.add_dependency(%q<json_pure>, ["~> 1.7.0"])
-    s.add_dependency(%q<activesupport>, ["~> 3.1.0"])
+    s.add_dependency(%q<activesupport>, [">= 3.1.0"])
     s.add_dependency(%q<i18n>, ["~> 0.6.0"])
     s.add_dependency(%q<builder>, ["~> 3.0.0"])
     s.add_dependency(%q<jeweler>, [">= 0"])
