@@ -12,7 +12,7 @@ describe Medie::Json do
     it "should be able to read a JSON object in many ways" do
       
       @json["articles"]["link"].first["type"].should == "text/json"
-      @json.articles.link.first.type.should == "text/json"
+      @json.articles.links.first.type.should == "text/json"
 
       @json.articles.links.search.href.should == "http://search.place.com"
       @json.articles.links.unknow_rel.should == nil

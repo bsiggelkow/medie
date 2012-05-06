@@ -3,6 +3,8 @@ module Medie
     
     # represents a set of links using json
     class Links
+      include Enumerable
+
       def initialize(parent_node)
         @hash = {}
         @node = parent_node
@@ -33,6 +35,11 @@ module Medie
         @hash.keys
       end
 
+      def each
+        @node.each do |l|
+          yield l
+        end
+      end
     end
   end
 end
