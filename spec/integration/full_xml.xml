@@ -1,0 +1,18 @@
+<articles>
+  <link rel='self' type='application/xml' href='http://another.place.com' charset="utf-8"/>
+  <link rel='search' type='application/opensearchdescription+xml' href='http://search.place.com' charset="utf-8"/>
+  <size>2</size>
+  <freezed />
+  <article>
+    <link rel='self' type='application/xml' href='http://a.link.com' charset="utf-8" profile='article'/>
+    <title>a awesome title</title>
+    <subtitle>Article subtitle</subtitle>
+    <author>John  Maclane</author>
+  </article>
+  <article>
+    <link rel='self' type='application/xml' href='http://a.link.com' charset="utf-8" profile='article'/>
+    <title>a awesome title</title>
+    <subtitle>Article subtitle</subtitle>
+    <author>John  Maclane</author>
+  </article>
+</articles>

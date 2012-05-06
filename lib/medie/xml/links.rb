@@ -5,8 +5,7 @@ module Medie
   
       def initialize(links)
         @hash = {}
-        @links = [links] unless links.kind_of? Array
-        @links = [] unless @links
+        @links = [links].flatten.compact
         @links.each { |l|
           link = Medie::Link.new(l)
           @hash[link.rel.to_s] = link
