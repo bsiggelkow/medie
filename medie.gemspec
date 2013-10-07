@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Guilherme Silveira"]
-  s.date = "2012-05-06"
+  s.date = "2013-10-07"
   s.description = "A gem that allows you register media types and unmarshal/marshal data accordingly"
   s.email = "guilherme.silveira@caelum.com.br"
   s.extra_rdoc_files = [
@@ -46,18 +46,18 @@ Gem::Specification.new do |s|
   s.homepage = "http://restfulie.caelumobjects.com"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.24"
+  s.rubygems_version = "2.0.3"
   s.summary = "A gem that allows you register media types and unmarshal/marshal data accordingly"
 
   if s.respond_to? :specification_version then
-    s.specification_version = 3
+    s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<methodize>, ["= 0.2.0"])
       s.add_runtime_dependency(%q<json_pure>, ["~> 1.7.0"])
       s.add_runtime_dependency(%q<activesupport>, [">= 3.1.0"])
       s.add_runtime_dependency(%q<i18n>, ["~> 0.6.0"])
-      s.add_runtime_dependency(%q<builder>, ["~> 3.0.0"])
+      s.add_runtime_dependency(%q<builder>, [">= 3.0.0"])
       s.add_development_dependency(%q<jeweler>, [">= 0"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
     else
@@ -65,7 +65,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<json_pure>, ["~> 1.7.0"])
       s.add_dependency(%q<activesupport>, [">= 3.1.0"])
       s.add_dependency(%q<i18n>, ["~> 0.6.0"])
-      s.add_dependency(%q<builder>, ["~> 3.0.0"])
+      s.add_dependency(%q<builder>, [">= 3.0.0"])
       s.add_dependency(%q<jeweler>, [">= 0"])
       s.add_dependency(%q<rspec>, [">= 0"])
     end
@@ -74,7 +74,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<json_pure>, ["~> 1.7.0"])
     s.add_dependency(%q<activesupport>, [">= 3.1.0"])
     s.add_dependency(%q<i18n>, ["~> 0.6.0"])
-    s.add_dependency(%q<builder>, ["~> 3.0.0"])
+    s.add_dependency(%q<builder>, [">= 3.0.0"])
     s.add_dependency(%q<jeweler>, [">= 0"])
     s.add_dependency(%q<rspec>, [">= 0"])
   end
