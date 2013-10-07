@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
 gem 'methodize', '0.2.0'
 gem 'json_pure', '~>1.7.0'
